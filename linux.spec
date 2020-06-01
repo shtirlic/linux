@@ -1,17 +1,17 @@
 #
 # note to self: Linus releases need to be named 5.x.0 not 5.x or various
 # things break
-# 
+#
 #
 
 Name:           linux
 Version:        5.7.2
-Release:        962
+Release:        13374
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.7.2.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-%{version}.tar.xz
 Source1:        config
 Source2:        cmdline
 
@@ -108,7 +108,7 @@ Requires:       linux-license = %{version}-%{release}
 Linux kernel build files
 
 %prep
-%setup -q -n linux-5.7.2
+%setup -q -n linux-%{version}
 
 #cve.patch.start cve patches
 #cve.patch.end
