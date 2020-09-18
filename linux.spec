@@ -5,8 +5,8 @@
 #
 
 Name:           linux
-Version:        5.8.9
-Release:        13379
+Version:        5.8.10
+Release:        13370
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
